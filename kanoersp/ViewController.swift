@@ -41,31 +41,31 @@ class ViewController: UIViewController {
         answerNumber = newAnswerNumber
         if answerNumber == 0 {
             if (sender as AnyObject).tag == 0 {
-                answerLabel.text = "相手：グー ・・・あいこ "}
+                answerLabel.text = "相手：グー ・・・結果：あいこ "}
             if (sender as AnyObject).tag == 1 {
-                answerLabel.text = "相手：グー ・・・負け "}
+                answerLabel.text = "相手：グー ・・・結果：負け "}
             if (sender as AnyObject).tag == 2 {
-                answerLabel.text = "相手：グー ・・・勝ち "}
+                answerLabel.text = "相手：グー ・・・結果：勝ち "}
             answerimageView.image = UIImage(named:"rock_1")
         }
         
         else if answerNumber == 1 {
             if (sender as AnyObject).tag == 0 {
-                answerLabel.text = "相手：チョキ ・・・勝ち "}
+                answerLabel.text = "相手：チョキ ・・・結果：勝ち "}
             if (sender as AnyObject).tag == 1 {
-                answerLabel.text = "相手：チョキ ・・・あいこ "}
+                answerLabel.text = "相手：チョキ ・・・結果：あいこ "}
             if (sender as AnyObject).tag == 2 {
-                answerLabel.text = "相手：チョキ ・・・負け "}
+                answerLabel.text = "相手：チョキ ・・・結果：負け "}
             answerimageView.image = UIImage(named:"scissors_1")
         }
         
         else if answerNumber == 2 {
             if (sender as AnyObject).tag == 0 {
-                answerLabel.text = "相手：パー ・・・負け "}
+                answerLabel.text = "相手：パー ・・・結果：負け "}
             if (sender as AnyObject).tag == 1 {
-                answerLabel.text = "相手：パー ・・・勝ち "}
+                answerLabel.text = "相手：パー ・・・結果：勝ち "}
             if (sender as AnyObject).tag == 2 {
-                answerLabel.text = "相手：パー ・・・あいこ "}
+                answerLabel.text = "相手：パー ・・・結果：あいこ "}
             
             answerimageView.image = UIImage(named:"paper1")
         }
