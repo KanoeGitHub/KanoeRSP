@@ -41,7 +41,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="shuffleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KaJ-qD-Mp2"/>
+                                    <action selector="shuffleRSP:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WX1-dS-10x"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXD-jy-PEy">
@@ -55,7 +55,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="shuffleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ha9-lj-bBv"/>
+                                    <action selector="shuffleRSP:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MPy-Fw-czH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhd-Vh-gq5">
@@ -69,7 +69,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="shuffleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yhl-PT-OfD"/>
+                                    <action selector="shuffleRSP:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uyf-rR-7Xv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdy-55-cZO">
@@ -111,8 +111,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="answerLabel" destination="0nr-sM-ccl" id="fca-bC-lCf"/>
-                        <outlet property="answerimageView" destination="PwW-1T-sZD" id="V3u-Ge-WDk"/>
+                        <outlet property="AnswerImageView" destination="PwW-1T-sZD" id="dNT-FR-8cB"/>
+                        <outlet property="AnswerLabel" destination="0nr-sM-ccl" id="X1l-6j-yqG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

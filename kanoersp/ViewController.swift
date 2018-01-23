@@ -20,18 +20,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBOutlet weak var answerimageView: UIImageView!
+    @IBOutlet weak var AnswerImageView: UIImageView!
     
-    @IBOutlet weak var answerLabel: UILabel!
+    @IBOutlet weak var AnswerLabel: UILabel!
 
-    //じゃんけん数字
     var answerNumber = 0
     
-    @IBAction func shuffleAction(_ sender: Any) {
-        var newAnswerNumber = 0  // 新しいじゃんけんの結果を一時的に格納する変数を設ける
+    @IBAction func shuffleRSP(_ sender: Any) {
+        var newAnswerNumber = 0
         
-        //ランダムに結果を出すが、前科の結果と異なる場合のみ採用
-        //repeatは繰り返し
         repeat{
             
             newAnswerNumber = Int(arc4random_uniform(3))
@@ -41,33 +38,33 @@ class ViewController: UIViewController {
         answerNumber = newAnswerNumber
         if answerNumber == 0 {
             if (sender as AnyObject).tag == 0 {
-                answerLabel.text = "相手：グー ・・・結果：あいこ "}
+                AnswerLabel.text = "相手：グー ・・・結果：あいこ "}
             if (sender as AnyObject).tag == 1 {
-                answerLabel.text = "相手：グー ・・・結果：負け "}
+                AnswerLabel.text = "相手：グー ・・・結果：負け "}
             if (sender as AnyObject).tag == 2 {
-                answerLabel.text = "相手：グー ・・・結果：勝ち "}
-            answerimageView.image = UIImage(named:"rock_1")
+                AnswerLabel.text = "相手：グー ・・・結果：勝ち "}
+            AnswerImageView.image = UIImage(named:"rock_1")
         }
         
         else if answerNumber == 1 {
             if (sender as AnyObject).tag == 0 {
-                answerLabel.text = "相手：チョキ ・・・結果：勝ち "}
+                AnswerLabel.text = "相手：チョキ ・・・結果：勝ち "}
             if (sender as AnyObject).tag == 1 {
-                answerLabel.text = "相手：チョキ ・・・結果：あいこ "}
+                AnswerLabel.text = "相手：チョキ ・・・結果：あいこ "}
             if (sender as AnyObject).tag == 2 {
-                answerLabel.text = "相手：チョキ ・・・結果：負け "}
-            answerimageView.image = UIImage(named:"scissors_1")
+                AnswerLabel.text = "相手：チョキ ・・・結果：負け "}
+            AnswerImageView.image = UIImage(named:"scissors_1")
         }
         
         else if answerNumber == 2 {
             if (sender as AnyObject).tag == 0 {
-                answerLabel.text = "相手：パー ・・・結果：負け "}
+                AnswerLabel.text = "相手：パー ・・・結果：負け "}
             if (sender as AnyObject).tag == 1 {
-                answerLabel.text = "相手：パー ・・・結果：勝ち "}
+                AnswerLabel.text = "相手：パー ・・・結果：勝ち "}
             if (sender as AnyObject).tag == 2 {
-                answerLabel.text = "相手：パー ・・・結果：あいこ "}
+                AnswerLabel.text = "相手：パー ・・・結果：あいこ "}
             
-            answerimageView.image = UIImage(named:"paper1")
+            AnswerImageView.image = UIImage(named:"paper1")
         }
     }
     
