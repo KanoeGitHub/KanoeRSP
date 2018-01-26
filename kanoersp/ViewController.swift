@@ -26,14 +26,11 @@ class ViewController: UIViewController {
 
     var answerNumber = 0
     
-    @IBAction func shuffleRSP(_ sender: Any) {
+    @IBAction func shuffleRSP(_ sender: Any) {  //ボタン3つ
         var newAnswerNumber = 0
+        // tag番号 1:グー、2:チョキ、3:パー
+            newAnswerNumber = Int(arc4random_uniform(3)) //０〜２の値をランダムに出す
         
-        repeat{
-            
-            newAnswerNumber = Int(arc4random_uniform(3))
-            
-        }while answerNumber == newAnswerNumber
         
         answerNumber = newAnswerNumber
         if answerNumber == 0 {
