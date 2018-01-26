@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var AnswerLabel: UILabel!
 
-    var answerNumber = 0
+    var answerNumber = 1
     
     @IBAction func shuffleRSP(_ sender: Any) {  //ボタン3つ
         var newAnswerNumber = 0
@@ -35,12 +35,12 @@ class ViewController: UIViewController {
         answerNumber = newAnswerNumber
         if answerNumber == 0 {
             if (sender as AnyObject).tag == 0 {
-                AnswerLabel.text = "相手：グー ・・・結果：あいこ "}
+                AnswerLabel.text = "相手：グー ・・・結果：あいこ "}  //ボタン押した時にテキストラベルに表示
             if (sender as AnyObject).tag == 1 {
                 AnswerLabel.text = "相手：グー ・・・結果：負け "}
             if (sender as AnyObject).tag == 2 {
                 AnswerLabel.text = "相手：グー ・・・結果：勝ち "}
-            AnswerImageView.image = UIImage(named:"rock_1")
+            AnswerImageView.image = UIImage(named:"rock_1") //表示する画像の名前指定
         }
         
         else if answerNumber == 1 {
